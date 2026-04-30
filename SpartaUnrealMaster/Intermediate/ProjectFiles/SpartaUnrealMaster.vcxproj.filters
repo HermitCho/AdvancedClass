@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\SpartaUnrealMaster.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\SpartaUnrealMaster.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\SpartaUnrealMasterEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\.vsconfig" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\SpartaUnrealMaster">
+      <UniqueIdentifier>{072ADCF6-C8FF-34F2-B03C-EC5A13308993}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\SpartaUnrealMaster\SpartaUnrealMaster.Build.cs">
+      <Filter>Source\SpartaUnrealMaster</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\SpartaUnrealMaster.cpp">
+      <Filter>Source\SpartaUnrealMaster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\SpartaUnrealMaster.h">
+      <Filter>Source\SpartaUnrealMaster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\SpartaUnrealMasterCharacter.cpp">
+      <Filter>Source\SpartaUnrealMaster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\SpartaUnrealMasterCharacter.h">
+      <Filter>Source\SpartaUnrealMaster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\SpartaUnrealMasterGameMode.cpp">
+      <Filter>Source\SpartaUnrealMaster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\SpartaUnrealMasterGameMode.h">
+      <Filter>Source\SpartaUnrealMaster</Filter>
+    </ClCompile>
+    <Filter Include="Source\SpartaUnrealMaster\Private">
+      <UniqueIdentifier>{0191C599-27D7-37C6-8BF3-265FFC0CE145}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Private\EnemyCharacter.cpp">
+      <Filter>Source\SpartaUnrealMaster\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Private\FireDamageType.cpp">
+      <Filter>Source\SpartaUnrealMaster\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Private\MyTestDamageType.cpp">
+      <Filter>Source\SpartaUnrealMaster\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Private\Shotgun.cpp">
+      <Filter>Source\SpartaUnrealMaster\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Private\ShotgunDamageType.cpp">
+      <Filter>Source\SpartaUnrealMaster\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Private\TraceTest.cpp">
+      <Filter>Source\SpartaUnrealMaster\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Private\WeaponBase.cpp">
+      <Filter>Source\SpartaUnrealMaster\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\SpartaUnrealMaster\Public">
+      <UniqueIdentifier>{AE3EA799-594D-33E0-B35B-109E9E731139}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\EnemyCharacter.h">
+      <Filter>Source\SpartaUnrealMaster\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\FireDamageType.h">
+      <Filter>Source\SpartaUnrealMaster\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\MyTestDamageType.h">
+      <Filter>Source\SpartaUnrealMaster\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\Shotgun.h">
+      <Filter>Source\SpartaUnrealMaster\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\ShotgunDamageType.h">
+      <Filter>Source\SpartaUnrealMaster\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\TraceTest.h">
+      <Filter>Source\SpartaUnrealMaster\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\WeaponBase.h">
+      <Filter>Source\SpartaUnrealMaster\Public</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "SpartaUnrealMaster",
+			"Path": "..\\Source\\SpartaUnrealMaster.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "SpartaUnrealMasterEditor",
+			"Path": "..\\Source\\SpartaUnrealMasterEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
