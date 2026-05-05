@@ -67,7 +67,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{ECB73313-DA82-3F49-A7D8-24B763D13A4B}</ProjectGuid>
+    <ProjectGuid>{A7D859E5-351F-3011-853E-194F7EA61D2C}</ProjectGuid>
     <RootNamespace>SpartaUnrealMaster</RootNamespace>
   </PropertyGroup>
   <Import Project="UECommon.props" />
@@ -286,7 +286,13 @@
     <ClCompile Include="..\..\Source\SpartaUnrealMaster\Private\MyTestDamageType.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
-    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Private\Shotgun.cpp">
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Private\NBCSandboxWeaponBase.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Private\NBCWeaponBase.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Private\NBCWeaponTemplateBase.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClCompile Include="..\..\Source\SpartaUnrealMaster\Private\ShotgunDamageType.cpp">
@@ -298,6 +304,9 @@
     <ClCompile Include="..\..\Source\SpartaUnrealMaster\Private\WeaponBase.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Private\WeaponTemplateBase.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\EnemyCharacter.h">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
@@ -307,7 +316,13 @@
     <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\MyTestDamageType.h">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
-    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\Shotgun.h">
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\NBCSandboxWeaponBase.h">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\NBCWeaponBase.h">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\NBCWeaponTemplateBase.h">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\ShotgunDamageType.h">
@@ -317,6 +332,9 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\WeaponBase.h">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\WeaponTemplateBase.h">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemGroup>

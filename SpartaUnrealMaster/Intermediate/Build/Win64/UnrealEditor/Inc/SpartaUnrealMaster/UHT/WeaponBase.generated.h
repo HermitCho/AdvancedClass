@@ -14,14 +14,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define SPARTAUNREALMASTER_WeaponBase_generated_h
 
-#define FID_SpartaUnrealMaster_Source_SpartaUnrealMaster_Public_WeaponBase_h_10_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FWeaponData_Statics; \
-	SPARTAUNREALMASTER_API static class UScriptStruct* StaticStruct();
+#define FID_SpartaUnrealMaster_Source_SpartaUnrealMaster_Public_WeaponBase_h_10_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execSetAiming); \
+	DECLARE_FUNCTION(execHandleFireDelay); \
+	DECLARE_FUNCTION(execApplyRecoil); \
+	DECLARE_FUNCTION(execFire);
 
 
-template<> SPARTAUNREALMASTER_API UScriptStruct* StaticStruct<struct FWeaponData>();
-
-#define FID_SpartaUnrealMaster_Source_SpartaUnrealMaster_Public_WeaponBase_h_34_INCLASS_NO_PURE_DECLS \
+#define FID_SpartaUnrealMaster_Source_SpartaUnrealMaster_Public_WeaponBase_h_10_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAWeaponBase(); \
 	friend struct Z_Construct_UClass_AWeaponBase_Statics; \
@@ -30,7 +30,7 @@ public: \
 	DECLARE_SERIALIZER(AWeaponBase)
 
 
-#define FID_SpartaUnrealMaster_Source_SpartaUnrealMaster_Public_WeaponBase_h_34_ENHANCED_CONSTRUCTORS \
+#define FID_SpartaUnrealMaster_Source_SpartaUnrealMaster_Public_WeaponBase_h_10_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	AWeaponBase(AWeaponBase&&); \
@@ -42,12 +42,13 @@ public: \
 	NO_API virtual ~AWeaponBase();
 
 
-#define FID_SpartaUnrealMaster_Source_SpartaUnrealMaster_Public_WeaponBase_h_31_PROLOG
-#define FID_SpartaUnrealMaster_Source_SpartaUnrealMaster_Public_WeaponBase_h_34_GENERATED_BODY \
+#define FID_SpartaUnrealMaster_Source_SpartaUnrealMaster_Public_WeaponBase_h_7_PROLOG
+#define FID_SpartaUnrealMaster_Source_SpartaUnrealMaster_Public_WeaponBase_h_10_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_SpartaUnrealMaster_Source_SpartaUnrealMaster_Public_WeaponBase_h_34_INCLASS_NO_PURE_DECLS \
-	FID_SpartaUnrealMaster_Source_SpartaUnrealMaster_Public_WeaponBase_h_34_ENHANCED_CONSTRUCTORS \
+	FID_SpartaUnrealMaster_Source_SpartaUnrealMaster_Public_WeaponBase_h_10_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_SpartaUnrealMaster_Source_SpartaUnrealMaster_Public_WeaponBase_h_10_INCLASS_NO_PURE_DECLS \
+	FID_SpartaUnrealMaster_Source_SpartaUnrealMaster_Public_WeaponBase_h_10_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

@@ -66,7 +66,13 @@
     <ClCompile Include="..\..\Source\SpartaUnrealMaster\Private\MyTestDamageType.cpp">
       <Filter>Source\SpartaUnrealMaster\Private</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Private\Shotgun.cpp">
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Private\NBCSandboxWeaponBase.cpp">
+      <Filter>Source\SpartaUnrealMaster\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Private\NBCWeaponBase.cpp">
+      <Filter>Source\SpartaUnrealMaster\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Private\NBCWeaponTemplateBase.cpp">
       <Filter>Source\SpartaUnrealMaster\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\SpartaUnrealMaster\Private\ShotgunDamageType.cpp">
@@ -76,6 +82,9 @@
       <Filter>Source\SpartaUnrealMaster\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\SpartaUnrealMaster\Private\WeaponBase.cpp">
+      <Filter>Source\SpartaUnrealMaster\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Private\WeaponTemplateBase.cpp">
       <Filter>Source\SpartaUnrealMaster\Private</Filter>
     </ClCompile>
     <Filter Include="Source\SpartaUnrealMaster\Public">
@@ -90,7 +99,13 @@
     <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\MyTestDamageType.h">
       <Filter>Source\SpartaUnrealMaster\Public</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\Shotgun.h">
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\NBCSandboxWeaponBase.h">
+      <Filter>Source\SpartaUnrealMaster\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\NBCWeaponBase.h">
+      <Filter>Source\SpartaUnrealMaster\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\NBCWeaponTemplateBase.h">
       <Filter>Source\SpartaUnrealMaster\Public</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\ShotgunDamageType.h">
@@ -100,6 +115,9 @@
       <Filter>Source\SpartaUnrealMaster\Public</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\WeaponBase.h">
+      <Filter>Source\SpartaUnrealMaster\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\WeaponTemplateBase.h">
       <Filter>Source\SpartaUnrealMaster\Public</Filter>
     </ClCompile>
   </ItemGroup>

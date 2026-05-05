@@ -5,15 +5,16 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
-				"D:/UnrealEngine/SpartaUnrealMaster/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset",
-				"D:/UnrealEngine/SpartaUnrealMaster/Content/ThirdPerson/Input/Actions/IA_Fire.uasset",
-				"D:/UnrealEngine/SpartaUnrealMaster/Content/ThirdPerson/Input/IMC_Default.uasset",
-				"D:/UnrealEngine/SpartaUnrealMaster/Content/Blueprints/BP_Shotgun.uasset",
-				"D:/UnrealEngine/SpartaUnrealMaster/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset",
-				"D:/UnrealEngine/SpartaUnrealMaster/Content/Characters/Mannequins/Meshes/SKM_Quinn_Simple.uasset",
-				"D:/UnrealEngine/SpartaUnrealMaster/Content/Characters/Mannequins/Meshes/SK_Mannequin.uasset",
-				"D:/UnrealEngine/SpartaUnrealMaster/Content/Blueprints/BP_EnemyCharacter.uasset",
-				"D:/UnrealEngine/SpartaUnrealMaster/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/C/KN/9OIQSW5PNU2M2BJB2KMWVI.uasset"
+				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset",
+				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/Blueprints/Gun/Templete/BP_WeaponTemplateBase_Pistol.uasset",
+				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/5/Q0/Z3DKN7UQU4PD8VVM7DNC8M.uasset",
+				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset",
+				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/Characters/Mannequins/Meshes/SKM_Quinn_Simple.uasset",
+				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/ThirdPerson/Input/IMC_Default.uasset",
+				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/ThirdPerson/Input/Actions/IA_Aiming.uasset",
+				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/Characters/Mannequins/Meshes/SK_Mannequin.uasset",
+				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/Blueprints/BP_Shotgun.uasset",
+				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/Blueprints/Gun/BP_Shotgun.uasset"
 			]
 		}
 	]

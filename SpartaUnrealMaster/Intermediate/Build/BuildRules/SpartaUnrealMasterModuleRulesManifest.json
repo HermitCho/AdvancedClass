@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"D:\\UnrealEngine\\SpartaUnrealMaster\\Source\\SpartaUnrealMaster\\SpartaUnrealMaster.Build.cs",
-		"D:\\UnrealEngine\\SpartaUnrealMaster\\Source\\SpartaUnrealMaster.Target.cs",
-		"D:\\UnrealEngine\\SpartaUnrealMaster\\Source\\SpartaUnrealMasterEditor.Target.cs"
+		"D:\\UnrealEngine\\AdvancedClass\\SpartaUnrealMaster\\Source\\SpartaUnrealMaster\\SpartaUnrealMaster.Build.cs",
+		"D:\\UnrealEngine\\AdvancedClass\\SpartaUnrealMaster\\Source\\SpartaUnrealMaster.Target.cs",
+		"D:\\UnrealEngine\\AdvancedClass\\SpartaUnrealMaster\\Source\\SpartaUnrealMasterEditor.Target.cs"
 	],
 	"EngineVersion": "5.5.4"
 }
