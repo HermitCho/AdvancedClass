@@ -15,6 +15,8 @@
 #include "Engine/DamageEvents.h"
 #include "FireDamageType.h"
 
+#include "Blueprint/UserWidget.h"
+
 DEFINE_LOG_CATEGORY(LogTemplateCharacter);
 
 //////////////////////////////////////////////////////////////////////////
@@ -158,33 +160,44 @@ void ASpartaUnrealMasterCharacter::Look(const FInputActionValue& Value)
 
 float ASpartaUnrealMasterCharacter::TakeDamage(float DamageAmount, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)
 {
+	// 1. 부모 클래스의 기본 데미지 처리 호출
 	float ActualDamage = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
-	
-	//const UDamageType* DT = DamageEvent.DamageTypeClass->GetDefaultObject<UFDamageType>();
-	const UFireDamageType* FireDamage = DamageEvent.DamageTypeClass->GetDefaultObject<UFireDamageType>();
-	
-	//if (DT && DT->bCausedByWorld)
-	//{
-	//	//낙사, 트랩 등
 
-	//	UE_LOG(LogTemp, Warning, TEXT("ByWorld Damage Received"));
-	//}
-
-	if (FireDamage)
+	// 2. DamageTypeClass가 유효한지 먼저 확인 (Null Check)
+	if (DamageEvent.DamageTypeClass != nullptr)
 	{
-		//화상
-		ActualDamage *= (1.f + FireDamage->ArmorPenetration);
+		// 3. 해당 클래스가 UFireDamageType이거나 그 자식 클래스인지 안전하게 확인 후 가져옴
+		// Cast를 사용하거나 CDO를 안전하게 검사합니다.
+		const UFireDamageType* FireDamage = Cast<UFireDamageType>(DamageEvent.DamageTypeClass->GetDefaultObject());
 
-		//화상효과(이펙트, 사운드 등)
+		if (FireDamage)
+		{
+			// 화상 데미지(UFireDamageType)인 경우에만 방어 관통 로직 적용
+			ActualDamage *= (1.f + FireDamage->ArmorPenetration);
+
+			UE_LOG(LogTemp, Warning, TEXT("Fire Damage Received! Applied Damage: %f"), ActualDamage);
+			// 여기에 화상 이펙트나 사운드 로직을 추가하세요.
+		}
+		else
+		{
+			// 화상 데미지가 아닌 일반 데미지인 경우
+			UE_LOG(LogTemp, Log, TEXT("Normal Damage Received: %f"), ActualDamage);
+		}
+	}
+	else
+	{
+		// DamageTypeClass가 없는 경우 (매우 드물지만 방어적 프로그래밍)
+		UE_LOG(LogTemp, Warning, TEXT("Damage received without a valid DamageTypeClass."));
 	}
 
-	//HP -= ActualDamage;
+	// 4. 최종적으로 계산된 ActualDamage를 HP 변수에 반영 (예시)
+	// Health -= ActualDamage;
 
 	if (EventInstigator)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("Im Enemy!"));
+		UE_LOG(LogTemp, Warning, TEXT("Attacked by someone!"));
 	}
-	
+
 	return ActualDamage;
 }
 
