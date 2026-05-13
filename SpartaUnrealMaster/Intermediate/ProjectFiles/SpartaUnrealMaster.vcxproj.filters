@@ -87,6 +87,30 @@
     <ClCompile Include="..\..\Source\SpartaUnrealMaster\Private\WeaponTemplateBase.cpp">
       <Filter>Source\SpartaUnrealMaster\Private</Filter>
     </ClCompile>
+    <Filter Include="Source\SpartaUnrealMaster\Private\5week">
+      <UniqueIdentifier>{B9D76863-93C3-3F6D-ACCD-D8442A5722C5}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Private\5week\Cloth.cpp">
+      <Filter>Source\SpartaUnrealMaster\Private\5week</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Private\5week\ItemBase.cpp">
+      <Filter>Source\SpartaUnrealMaster\Private\5week</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Private\5week\MyActorComponent.cpp">
+      <Filter>Source\SpartaUnrealMaster\Private\5week</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Private\5week\MyTorchLight.cpp">
+      <Filter>Source\SpartaUnrealMaster\Private\5week</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Private\5week\Steel.cpp">
+      <Filter>Source\SpartaUnrealMaster\Private\5week</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Private\5week\TestMyInterface.cpp">
+      <Filter>Source\SpartaUnrealMaster\Private\5week</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Private\5week\Wood.cpp">
+      <Filter>Source\SpartaUnrealMaster\Private\5week</Filter>
+    </ClCompile>
     <Filter Include="Source\SpartaUnrealMaster\Public">
       <UniqueIdentifier>{AE3EA799-594D-33E0-B35B-109E9E731139}</UniqueIdentifier>
     </Filter>
@@ -119,6 +143,30 @@
     </ClCompile>
     <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\WeaponTemplateBase.h">
       <Filter>Source\SpartaUnrealMaster\Public</Filter>
+    </ClCompile>
+    <Filter Include="Source\SpartaUnrealMaster\Public\5week">
+      <UniqueIdentifier>{F74ABA89-29A1-3D06-A99A-61D14C151DB4}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\5week\Cloth.h">
+      <Filter>Source\SpartaUnrealMaster\Public\5week</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\5week\ItemBase.h">
+      <Filter>Source\SpartaUnrealMaster\Public\5week</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\5week\MyActorComponent.h">
+      <Filter>Source\SpartaUnrealMaster\Public\5week</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\5week\MyTorchLight.h">
+      <Filter>Source\SpartaUnrealMaster\Public\5week</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\5week\Steel.h">
+      <Filter>Source\SpartaUnrealMaster\Public\5week</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\5week\TestMyInterface.h">
+      <Filter>Source\SpartaUnrealMaster\Public\5week</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\5week\Wood.h">
+      <Filter>Source\SpartaUnrealMaster\Public\5week</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
