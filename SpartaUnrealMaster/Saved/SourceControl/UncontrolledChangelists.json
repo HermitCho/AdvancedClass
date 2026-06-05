@@ -5,28 +5,13 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
-				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/StarterContent/Architecture/Floor_400x400.uasset",
-				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/5/LS/5P6V0I50OEX269HTTLBOBO.uasset",
+				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset",
+				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/8/4M/VI66BVUPLX6E68DMPCNFGG.uasset",
+				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/Blueprints/8week/8TestActor.uasset",
+				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/__ExternalObjects__/ThirdPerson/Maps/ThirdPersonMap/C/OK/S0BMPQUK5WELJT294OYTHU.uasset",
+				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/9/ZP/W214FU92IVAF4JHDAYG5K2.uasset",
 				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/ThirdPerson/Maps/ThirdPersonMap.umap",
-				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset",
-				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/Blueprints/BP_Cloth.uasset",
-				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/Blueprints/BP_Steel.uasset",
-				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/Blueprints/BP_Wood.uasset",
-				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/6/Z0/UQIR2I7LMOW1RYB3RTDCRG.uasset",
-				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/A/YM/2NW1DCKJTF0LC3E9ZNUPET.uasset",
-				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/D/O4/IJPVB6VZFIZKMTMYYG4OM7.uasset",
-				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/UI/WBP_HUD.uasset",
-				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/Resource/Modeling/IK_Mixamo.uasset",
-				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/Resource/Modeling/Beta_HighLimbsGeoSG3.uasset",
-				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/Resource/Modeling/Beta_Joints_MAT1.uasset",
-				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/Resource/Animations/Death/Death.uasset",
-				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/Resource/Modeling/X_Bot.uasset",
-				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/Resource/Modeling/X_Bot_Anim.uasset",
-				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/Resource/Modeling/X_Bot_PhysicsAsset.uasset",
-				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/Resource/Modeling/X_Bot_Skeleton.uasset",
-				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/Characters/Mannequins/Animations/ABP_Manny.uasset",
-				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/Resource/Animations/Death/Death1.uasset",
-				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/Resource/Modeling/IKR_Mixamo.uasset"
+				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/Blueprints/8week/BP_8TestActor.uasset"
 			]
 		}
 	]

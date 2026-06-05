@@ -63,7 +63,19 @@
     <ClCompile Include="..\..\Source\SpartaUnrealMaster\Private\FireDamageType.cpp">
       <Filter>Source\SpartaUnrealMaster\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Private\MyDataAssetTestActor.cpp">
+      <Filter>Source\SpartaUnrealMaster\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\SpartaUnrealMaster\Private\MyTestDamageType.cpp">
+      <Filter>Source\SpartaUnrealMaster\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Private\MyTestPrimaryDataAsset.cpp">
+      <Filter>Source\SpartaUnrealMaster\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Private\MyWeaponStruct.cpp">
+      <Filter>Source\SpartaUnrealMaster\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Private\MyWorldSubsystem.cpp">
       <Filter>Source\SpartaUnrealMaster\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\SpartaUnrealMaster\Private\NBCSandboxWeaponBase.cpp">
@@ -78,10 +90,16 @@
     <ClCompile Include="..\..\Source\SpartaUnrealMaster\Private\ShotgunDamageType.cpp">
       <Filter>Source\SpartaUnrealMaster\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Private\TestSoftActor.cpp">
+      <Filter>Source\SpartaUnrealMaster\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\SpartaUnrealMaster\Private\TraceTest.cpp">
       <Filter>Source\SpartaUnrealMaster\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\SpartaUnrealMaster\Private\WeaponBase.cpp">
+      <Filter>Source\SpartaUnrealMaster\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Private\WeaponBox.cpp">
       <Filter>Source\SpartaUnrealMaster\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\SpartaUnrealMaster\Private\WeaponTemplateBase.cpp">
@@ -111,6 +129,24 @@
     <ClCompile Include="..\..\Source\SpartaUnrealMaster\Private\5week\Wood.cpp">
       <Filter>Source\SpartaUnrealMaster\Private\5week</Filter>
     </ClCompile>
+    <Filter Include="Source\SpartaUnrealMaster\Private\7week">
+      <UniqueIdentifier>{36E7C447-BC75-3FFA-A055-1D5DC6D1F99F}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Private\7week\TimeWorldSubsystem.cpp">
+      <Filter>Source\SpartaUnrealMaster\Private\7week</Filter>
+    </ClCompile>
+    <Filter Include="Source\SpartaUnrealMaster\Private\8week">
+      <UniqueIdentifier>{B40C0AD3-EAAE-3ADB-B15F-98875EA02841}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Private\8week\MyObjectPool.cpp">
+      <Filter>Source\SpartaUnrealMaster\Private\8week</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Private\8week\PooledObject.cpp">
+      <Filter>Source\SpartaUnrealMaster\Private\8week</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Private\8week\PooledObjectData.cpp">
+      <Filter>Source\SpartaUnrealMaster\Private\8week</Filter>
+    </ClCompile>
     <Filter Include="Source\SpartaUnrealMaster\Public">
       <UniqueIdentifier>{AE3EA799-594D-33E0-B35B-109E9E731139}</UniqueIdentifier>
     </Filter>
@@ -120,7 +156,19 @@
     <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\FireDamageType.h">
       <Filter>Source\SpartaUnrealMaster\Public</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\MyDataAssetTestActor.h">
+      <Filter>Source\SpartaUnrealMaster\Public</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\MyTestDamageType.h">
+      <Filter>Source\SpartaUnrealMaster\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\MyTestPrimaryDataAsset.h">
+      <Filter>Source\SpartaUnrealMaster\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\MyWeaponStruct.h">
+      <Filter>Source\SpartaUnrealMaster\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\MyWorldSubsystem.h">
       <Filter>Source\SpartaUnrealMaster\Public</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\NBCSandboxWeaponBase.h">
@@ -135,10 +183,16 @@
     <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\ShotgunDamageType.h">
       <Filter>Source\SpartaUnrealMaster\Public</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\TestSoftActor.h">
+      <Filter>Source\SpartaUnrealMaster\Public</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\TraceTest.h">
       <Filter>Source\SpartaUnrealMaster\Public</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\WeaponBase.h">
+      <Filter>Source\SpartaUnrealMaster\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\WeaponBox.h">
       <Filter>Source\SpartaUnrealMaster\Public</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\WeaponTemplateBase.h">
@@ -167,6 +221,24 @@
     </ClCompile>
     <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\5week\Wood.h">
       <Filter>Source\SpartaUnrealMaster\Public\5week</Filter>
+    </ClCompile>
+    <Filter Include="Source\SpartaUnrealMaster\Public\7week">
+      <UniqueIdentifier>{B1F17618-0513-3FC3-B6F7-C115D95D51E9}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\7week\TimeWorldSubsystem.h">
+      <Filter>Source\SpartaUnrealMaster\Public\7week</Filter>
+    </ClCompile>
+    <Filter Include="Source\SpartaUnrealMaster\Public\8week">
+      <UniqueIdentifier>{AAFA548F-3133-3696-8842-882FDEBFAE0E}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\8week\MyObjectPool.h">
+      <Filter>Source\SpartaUnrealMaster\Public\8week</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\8week\PooledObject.h">
+      <Filter>Source\SpartaUnrealMaster\Public\8week</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\8week\PooledObjectData.h">
+      <Filter>Source\SpartaUnrealMaster\Public\8week</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
