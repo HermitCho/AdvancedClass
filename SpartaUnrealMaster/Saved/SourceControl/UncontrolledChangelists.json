@@ -11,7 +11,28 @@
 				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/__ExternalObjects__/ThirdPerson/Maps/ThirdPersonMap/C/OK/S0BMPQUK5WELJT294OYTHU.uasset",
 				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/9/ZP/W214FU92IVAF4JHDAYG5K2.uasset",
 				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/ThirdPerson/Maps/ThirdPersonMap.umap",
-				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/Blueprints/8week/BP_8TestActor.uasset"
+				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/Blueprints/8week/BP_8TestActor.uasset",
+				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/NewMap.umap",
+				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/Levels/NewMap.umap",
+				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/Levels/GAS_Test.umap",
+				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/Blueprints/GAS/10week/BP_GAS_CharacterBase.uasset",
+				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset",
+				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/Blueprints/GAS/10week/BP_GAS_EnemyCharacter.uasset",
+				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/Blueprints/GAS/GA/GA_TestAbility.uasset",
+				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/Blueprints/GAS/BP_GA_Gamemode.uasset",
+				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/Blueprints/GAS/GA/GA_Flash.uasset",
+				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/Blueprints/GAS/10week/BP_GAS_PlayerCharacter.uasset",
+				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/ThirdPerson/Input/IMC_Default.uasset",
+				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/DataTable/DT_MyMonsterTag.uasset",
+				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/Blueprints/5week/BP_GoblinEnemy.uasset",
+				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/Blueprints/Gun/Templete/BP_WeaponTemplateBase_Pistol.uasset",
+				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/8/60/GKOLVAT55NGNL6TV71PVD5.uasset",
+				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/ThirdPerson/Input/Actions/IA_Reload.uasset",
+				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/Blueprints/GAS/BP_GASCharacter.uasset",
+				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/Blueprints/GAS/10week/BP_GASCharacter.uasset",
+				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/ThirdPerson/Blueprints/BP_GASCharacter.uasset",
+				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/Blueprints/10week/BP_GAS_CharacterBase.uasset",
+				"D:/UnrealEngine/AdvancedClass/SpartaUnrealMaster/Content/Blueprints/GAS/GA/GA_Ability.uasset"
 			]
 		}
 	]

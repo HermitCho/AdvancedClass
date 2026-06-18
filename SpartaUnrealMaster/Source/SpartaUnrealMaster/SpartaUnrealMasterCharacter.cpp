@@ -12,6 +12,8 @@
 #include "InputActionValue.h"
 
 #include "WeaponBase.h"
+#include "WeaponTemplateBase.h"
+
 #include "Engine/DamageEvents.h"
 #include "FireDamageType.h"
 
@@ -93,7 +95,23 @@ void ASpartaUnrealMasterCharacter::SetupPlayerInputComponent(UInputComponent* Pl
 		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &ASpartaUnrealMasterCharacter::Look);
 
 		// Fire
-		EnhancedInputComponent->BindAction(FireAction,ETriggerEvent::Started, this, &ASpartaUnrealMasterCharacter::Fire);
+		if (FireAction)
+		{
+			EnhancedInputComponent->BindAction(FireAction, ETriggerEvent::Started, this, &ASpartaUnrealMasterCharacter::Fire);
+		}
+
+		// Aiming
+		if (AimingAction)
+			{
+				EnhancedInputComponent->BindAction(AimingAction, ETriggerEvent::Started, this, &ASpartaUnrealMasterCharacter::StartAiming);
+
+			EnhancedInputComponent->BindAction(AimingAction, ETriggerEvent::Completed, this, &ASpartaUnrealMasterCharacter::StopAiming);
+
+			EnhancedInputComponent->BindAction(AimingAction, ETriggerEvent::Canceled, this, &ASpartaUnrealMasterCharacter::StopAiming);
+		}
+
+		// Reloading
+		EnhancedInputComponent->BindAction(ReloadingAction, ETriggerEvent::Started, this, &ASpartaUnrealMasterCharacter::Reload);
 	}
 	else
 	{
@@ -206,5 +224,32 @@ void ASpartaUnrealMasterCharacter::Fire()
 	if (CurrentWeapon)
 	{
 		CurrentWeapon->Fire();
+	}
+}
+
+void ASpartaUnrealMasterCharacter::StartAiming()
+{
+	if (CurrentWeapon)
+	{
+		CurrentWeapon->SetAiming(true);
+	}
+}
+
+void ASpartaUnrealMasterCharacter::StopAiming()
+{
+	if (CurrentWeapon)
+	{
+		CurrentWeapon->SetAiming(false);
+	}
+}
+
+void ASpartaUnrealMasterCharacter::Reload()
+{
+	if (CurrentWeapon)
+	{
+		if (AWeaponTemplateBase* TemplateWeapon = Cast<AWeaponTemplateBase>(CurrentWeapon))
+		{
+			TemplateWeapon->Reload();
+		}
 	}
 }

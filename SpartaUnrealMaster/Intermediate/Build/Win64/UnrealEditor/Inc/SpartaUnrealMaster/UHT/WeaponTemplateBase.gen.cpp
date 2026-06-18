@@ -6,10 +6,12 @@
 
 #include "UObject/GeneratedCppIncludes.h"
 #include "SpartaUnrealMaster/Public/WeaponTemplateBase.h"
+#include "Runtime/Engine/Classes/Engine/TimerHandle.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeWeaponTemplateBase() {}
 
 // Begin Cross Module References
+ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FTimerHandle();
 SPARTAUNREALMASTER_API UClass* Z_Construct_UClass_AWeaponBase();
 SPARTAUNREALMASTER_API UClass* Z_Construct_UClass_AWeaponTemplateBase();
 SPARTAUNREALMASTER_API UClass* Z_Construct_UClass_AWeaponTemplateBase_NoRegister();
@@ -88,6 +90,35 @@ DEFINE_FUNCTION(AWeaponTemplateBase::execCheckAmmo)
 	P_NATIVE_END;
 }
 // End Class AWeaponTemplateBase Function CheckAmmo
+
+// Begin Class AWeaponTemplateBase Function HandleReloadFinished
+struct Z_Construct_UFunction_AWeaponTemplateBase_HandleReloadFinished_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/WeaponTemplateBase.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AWeaponTemplateBase_HandleReloadFinished_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AWeaponTemplateBase, nullptr, "HandleReloadFinished", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AWeaponTemplateBase_HandleReloadFinished_Statics::Function_MetaDataParams), Z_Construct_UFunction_AWeaponTemplateBase_HandleReloadFinished_Statics::Function_MetaDataParams) };
+UFunction* Z_Construct_UFunction_AWeaponTemplateBase_HandleReloadFinished()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AWeaponTemplateBase_HandleReloadFinished_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(AWeaponTemplateBase::execHandleReloadFinished)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->HandleReloadFinished();
+	P_NATIVE_END;
+}
+// End Class AWeaponTemplateBase Function HandleReloadFinished
 
 // Begin Class AWeaponTemplateBase Function PlayEffects
 static const FName NAME_AWeaponTemplateBase_PlayEffects = FName(TEXT("PlayEffects"));
@@ -180,7 +211,7 @@ struct Z_Construct_UFunction_AWeaponTemplateBase_Reload_Statics
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AWeaponTemplateBase_Reload_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AWeaponTemplateBase, nullptr, "Reload", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AWeaponTemplateBase_Reload_Statics::Function_MetaDataParams), Z_Construct_UFunction_AWeaponTemplateBase_Reload_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AWeaponTemplateBase_Reload_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AWeaponTemplateBase, nullptr, "Reload", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AWeaponTemplateBase_Reload_Statics::Function_MetaDataParams), Z_Construct_UFunction_AWeaponTemplateBase_Reload_Statics::Function_MetaDataParams) };
 UFunction* Z_Construct_UFunction_AWeaponTemplateBase_Reload()
 {
 	static UFunction* ReturnFunction = nullptr;
@@ -253,6 +284,7 @@ void AWeaponTemplateBase::StaticRegisterNativesAWeaponTemplateBase()
 	UClass* Class = AWeaponTemplateBase::StaticClass();
 	static const FNameNativePtrPair Funcs[] = {
 		{ "CheckAmmo", &AWeaponTemplateBase::execCheckAmmo },
+		{ "HandleReloadFinished", &AWeaponTemplateBase::execHandleReloadFinished },
 		{ "Reload", &AWeaponTemplateBase::execReload },
 		{ "UpdateAmmo", &AWeaponTemplateBase::execUpdateAmmo },
 	};
@@ -267,19 +299,29 @@ struct Z_Construct_UClass_AWeaponTemplateBase_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
-#if !UE_BUILD_SHIPPING
-		{ "Comment", "/**\n * \n */" },
-#endif
 		{ "IncludePath", "WeaponTemplateBase.h" },
 		{ "ModuleRelativePath", "Public/WeaponTemplateBase.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bIsReloading_MetaData[] = {
+		{ "Category", "Weapon | State" },
+		{ "ModuleRelativePath", "Public/WeaponTemplateBase.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TimerHandle_Reload_MetaData[] = {
+		{ "Category", "WeaponTemplateBase" },
+		{ "ModuleRelativePath", "Public/WeaponTemplateBase.h" },
+	};
 #endif // WITH_METADATA
+	static void NewProp_bIsReloading_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp_bIsReloading;
+	static const UECodeGen_Private::FStructPropertyParams NewProp_TimerHandle_Reload;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
 		{ &Z_Construct_UFunction_AWeaponTemplateBase_CheckAmmo, "CheckAmmo" }, // 3174096296
+		{ &Z_Construct_UFunction_AWeaponTemplateBase_HandleReloadFinished, "HandleReloadFinished" }, // 3239637717
 		{ &Z_Construct_UFunction_AWeaponTemplateBase_PlayEffects, "PlayEffects" }, // 2462573819
 		{ &Z_Construct_UFunction_AWeaponTemplateBase_ProcessFiring, "ProcessFiring" }, // 1231009088
-		{ &Z_Construct_UFunction_AWeaponTemplateBase_Reload, "Reload" }, // 1182837138
+		{ &Z_Construct_UFunction_AWeaponTemplateBase_Reload, "Reload" }, // 3851897280
 		{ &Z_Construct_UFunction_AWeaponTemplateBase_UpdateAmmo, "UpdateAmmo" }, // 4150000976
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
@@ -288,6 +330,17 @@ struct Z_Construct_UClass_AWeaponTemplateBase_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
+void Z_Construct_UClass_AWeaponTemplateBase_Statics::NewProp_bIsReloading_SetBit(void* Obj)
+{
+	((AWeaponTemplateBase*)Obj)->bIsReloading = 1;
+}
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AWeaponTemplateBase_Statics::NewProp_bIsReloading = { "bIsReloading", nullptr, (EPropertyFlags)0x0020080000020015, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(AWeaponTemplateBase), &Z_Construct_UClass_AWeaponTemplateBase_Statics::NewProp_bIsReloading_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_bIsReloading_MetaData), NewProp_bIsReloading_MetaData) };
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_AWeaponTemplateBase_Statics::NewProp_TimerHandle_Reload = { "TimerHandle_Reload", nullptr, (EPropertyFlags)0x0020080000020005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AWeaponTemplateBase, TimerHandle_Reload), Z_Construct_UScriptStruct_FTimerHandle, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TimerHandle_Reload_MetaData), NewProp_TimerHandle_Reload_MetaData) }; // 756291145
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AWeaponTemplateBase_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWeaponTemplateBase_Statics::NewProp_bIsReloading,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWeaponTemplateBase_Statics::NewProp_TimerHandle_Reload,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AWeaponTemplateBase_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_AWeaponTemplateBase_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_AWeaponBase,
 	(UObject* (*)())Z_Construct_UPackage__Script_SpartaUnrealMaster,
@@ -299,11 +352,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_AWeaponTemplateBase_Sta
 	&StaticCppClassTypeInfo,
 	DependentSingletons,
 	FuncInfo,
-	nullptr,
+	Z_Construct_UClass_AWeaponTemplateBase_Statics::PropPointers,
 	nullptr,
 	UE_ARRAY_COUNT(DependentSingletons),
 	UE_ARRAY_COUNT(FuncInfo),
-	0,
+	UE_ARRAY_COUNT(Z_Construct_UClass_AWeaponTemplateBase_Statics::PropPointers),
 	0,
 	0x009000A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AWeaponTemplateBase_Statics::Class_MetaDataParams), Z_Construct_UClass_AWeaponTemplateBase_Statics::Class_MetaDataParams)
@@ -329,10 +382,10 @@ AWeaponTemplateBase::~AWeaponTemplateBase() {}
 struct Z_CompiledInDeferFile_FID_SpartaUnrealMaster_Source_SpartaUnrealMaster_Public_WeaponTemplateBase_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AWeaponTemplateBase, AWeaponTemplateBase::StaticClass, TEXT("AWeaponTemplateBase"), &Z_Registration_Info_UClass_AWeaponTemplateBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AWeaponTemplateBase), 1193069886U) },
+		{ Z_Construct_UClass_AWeaponTemplateBase, AWeaponTemplateBase::StaticClass, TEXT("AWeaponTemplateBase"), &Z_Registration_Info_UClass_AWeaponTemplateBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AWeaponTemplateBase), 291693420U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_SpartaUnrealMaster_Source_SpartaUnrealMaster_Public_WeaponTemplateBase_h_1066818433(TEXT("/Script/SpartaUnrealMaster"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_SpartaUnrealMaster_Source_SpartaUnrealMaster_Public_WeaponTemplateBase_h_271384949(TEXT("/Script/SpartaUnrealMaster"),
 	Z_CompiledInDeferFile_FID_SpartaUnrealMaster_Source_SpartaUnrealMaster_Public_WeaponTemplateBase_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_SpartaUnrealMaster_Source_SpartaUnrealMaster_Public_WeaponTemplateBase_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

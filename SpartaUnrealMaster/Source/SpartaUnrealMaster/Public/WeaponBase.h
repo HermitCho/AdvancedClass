@@ -17,17 +17,35 @@ public:
 	virtual void BeginPlay();
 	virtual void Tick(float DeltaTime);
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
-	TObjectPtr<USceneComponent> Root;
-
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
-	TObjectPtr<class UArrowComponent> FirePoint;
-
 	UFUNCTION(BlueprintCallable)
 	virtual void Fire();
 
 	UFUNCTION(BlueprintCallable)
 	void ApplyRecoil();
+
+	// 조준의 전체 흐름 제어
+	UFUNCTION(BlueprintCallable, Category = "Weapon | Actions")
+	void SetAiming(bool bNewIsAiming);
+
+	virtual void OnAimingStarted() {}
+	virtual void OnAimingStopped() {}
+
+protected:
+	UFUNCTION()
+	void HandleFireDelay();
+
+	// 실제 FOV를 깎아 나갈 함수 (타이머가 호출)
+	void UpdateFOVTransition();
+
+	// 템플릿 메서드에서 호출할 실제 로직
+	void StartFOVTransition(float InTargetFOV);
+
+public:
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+	TObjectPtr<USceneComponent> Root;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+	TObjectPtr<class UArrowComponent> FirePoint;
 
 protected:
 	//소모되는 탄약수
@@ -70,18 +88,8 @@ protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 	FTimerHandle TimerFireDelay;
 
-	UFUNCTION()
-	void HandleFireDelay();
-
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Weapon | State")
 	bool bIsAiming = false;
-
-	// 조준의 전체 흐름 제어
-	UFUNCTION(BlueprintCallable, Category = "Weapon | Actions")
-	void SetAiming(bool bNewIsAiming);
-
-	virtual void OnAimingStarted() {}
-	virtual void OnAimingStopped() {}
 
 	// 조준 시 이동 속도나 반동 계수 등 공통으로 쓰일 변수
 	UPROPERTY(EditAnywhere, Category = "Weapon | Aiming")
@@ -91,16 +99,10 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Weapon | Effects")
 	float DefaultFOV = 100.f;
 
-
 	// FOV 전환용 타이머 핸들
 	FTimerHandle TimerHandle_FOVTransition;
 
 	float TargetFOV;
+
 	float FOVInterpSpeed; // 전환 속도
-
-	// 실제 FOV를 깎아 나갈 함수 (타이머가 호출)
-	void UpdateFOVTransition();
-
-	// 템플릿 메서드에서 호출할 실제 로직
-	void StartFOVTransition(float InTargetFOV);
 };

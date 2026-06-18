@@ -14,6 +14,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define SPARTAUNREALMASTER_PooledObject_generated_h
 
+#define FID_SpartaUnrealMaster_Source_SpartaUnrealMaster_Public_8week_PooledObject_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execRecycleSelf);
+
+
 #define FID_SpartaUnrealMaster_Source_SpartaUnrealMaster_Public_8week_PooledObject_h_13_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUPooledObject(); \
@@ -41,6 +45,7 @@ public: \
 #define FID_SpartaUnrealMaster_Source_SpartaUnrealMaster_Public_8week_PooledObject_h_13_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
+	FID_SpartaUnrealMaster_Source_SpartaUnrealMaster_Public_8week_PooledObject_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
 	FID_SpartaUnrealMaster_Source_SpartaUnrealMaster_Public_8week_PooledObject_h_13_INCLASS_NO_PURE_DECLS \
 	FID_SpartaUnrealMaster_Source_SpartaUnrealMaster_Public_8week_PooledObject_h_13_ENHANCED_CONSTRUCTORS \
 private: \

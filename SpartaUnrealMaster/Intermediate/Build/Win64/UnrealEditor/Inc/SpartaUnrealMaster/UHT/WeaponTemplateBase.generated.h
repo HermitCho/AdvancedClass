@@ -14,17 +14,18 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define SPARTAUNREALMASTER_WeaponTemplateBase_generated_h
 
-#define FID_SpartaUnrealMaster_Source_SpartaUnrealMaster_Public_WeaponTemplateBase_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_SpartaUnrealMaster_Source_SpartaUnrealMaster_Public_WeaponTemplateBase_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual void UpdateAmmo_Implementation(); \
 	virtual bool CheckAmmo_Implementation(); \
 	virtual void Reload_Implementation(); \
 	DECLARE_FUNCTION(execUpdateAmmo); \
 	DECLARE_FUNCTION(execCheckAmmo); \
+	DECLARE_FUNCTION(execHandleReloadFinished); \
 	DECLARE_FUNCTION(execReload);
 
 
-#define FID_SpartaUnrealMaster_Source_SpartaUnrealMaster_Public_WeaponTemplateBase_h_15_CALLBACK_WRAPPERS
-#define FID_SpartaUnrealMaster_Source_SpartaUnrealMaster_Public_WeaponTemplateBase_h_15_INCLASS_NO_PURE_DECLS \
+#define FID_SpartaUnrealMaster_Source_SpartaUnrealMaster_Public_WeaponTemplateBase_h_12_CALLBACK_WRAPPERS
+#define FID_SpartaUnrealMaster_Source_SpartaUnrealMaster_Public_WeaponTemplateBase_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAWeaponTemplateBase(); \
 	friend struct Z_Construct_UClass_AWeaponTemplateBase_Statics; \
@@ -33,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(AWeaponTemplateBase)
 
 
-#define FID_SpartaUnrealMaster_Source_SpartaUnrealMaster_Public_WeaponTemplateBase_h_15_ENHANCED_CONSTRUCTORS \
+#define FID_SpartaUnrealMaster_Source_SpartaUnrealMaster_Public_WeaponTemplateBase_h_12_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AWeaponTemplateBase(); \
 private: \
@@ -47,14 +48,14 @@ public: \
 	NO_API virtual ~AWeaponTemplateBase();
 
 
-#define FID_SpartaUnrealMaster_Source_SpartaUnrealMaster_Public_WeaponTemplateBase_h_12_PROLOG
-#define FID_SpartaUnrealMaster_Source_SpartaUnrealMaster_Public_WeaponTemplateBase_h_15_GENERATED_BODY \
+#define FID_SpartaUnrealMaster_Source_SpartaUnrealMaster_Public_WeaponTemplateBase_h_9_PROLOG
+#define FID_SpartaUnrealMaster_Source_SpartaUnrealMaster_Public_WeaponTemplateBase_h_12_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_SpartaUnrealMaster_Source_SpartaUnrealMaster_Public_WeaponTemplateBase_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_SpartaUnrealMaster_Source_SpartaUnrealMaster_Public_WeaponTemplateBase_h_15_CALLBACK_WRAPPERS \
-	FID_SpartaUnrealMaster_Source_SpartaUnrealMaster_Public_WeaponTemplateBase_h_15_INCLASS_NO_PURE_DECLS \
-	FID_SpartaUnrealMaster_Source_SpartaUnrealMaster_Public_WeaponTemplateBase_h_15_ENHANCED_CONSTRUCTORS \
+	FID_SpartaUnrealMaster_Source_SpartaUnrealMaster_Public_WeaponTemplateBase_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_SpartaUnrealMaster_Source_SpartaUnrealMaster_Public_WeaponTemplateBase_h_12_CALLBACK_WRAPPERS \
+	FID_SpartaUnrealMaster_Source_SpartaUnrealMaster_Public_WeaponTemplateBase_h_12_INCLASS_NO_PURE_DECLS \
+	FID_SpartaUnrealMaster_Source_SpartaUnrealMaster_Public_WeaponTemplateBase_h_12_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

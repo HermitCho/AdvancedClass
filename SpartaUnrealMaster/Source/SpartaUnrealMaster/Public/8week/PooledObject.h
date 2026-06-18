@@ -15,6 +15,7 @@ class SPARTAUNREALMASTER_API UPooledObject : public UActorComponent
 public:	
 	void Init(class AMyObjectPool* Owner);
 
+	UFUNCTION()
 	void RecycleSelf();
 
 	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly)

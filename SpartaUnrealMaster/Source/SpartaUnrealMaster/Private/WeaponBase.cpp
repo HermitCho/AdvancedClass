@@ -3,6 +3,8 @@
 #include "TimerManager.h"
 #include "Kismet/GameplayStatics.h"
 #include "GameFramework/PlayerController.h"
+#include "GameFramework/Pawn.h"
+#include "Camera/PlayerCameraManager.h"
 
 
 AWeaponBase::AWeaponBase()
@@ -47,6 +49,8 @@ void AWeaponBase::BeginPlay()
 
 void AWeaponBase::Fire()
 {
+	if (!CanFire) return;
+
 	CanFire = false;
 	ApplyRecoil();
 	GetWorld()->GetTimerManager().SetTimer(TimerFireDelay, this, &AWeaponBase::HandleFireDelay, 1.f / RoF, false);
@@ -54,8 +58,8 @@ void AWeaponBase::Fire()
 
 void AWeaponBase::HandleFireDelay()
 {
-	GetWorld()->GetTimerManager().ClearTimer(TimerFireDelay);
 	CanFire = true;
+	GetWorld()->GetTimerManager().ClearTimer(TimerFireDelay);
 }
 
 void AWeaponBase::ApplyRecoil()
@@ -80,12 +84,8 @@ void AWeaponBase::SetAiming(bool bNewIsAiming)
 	if (bIsAiming == bNewIsAiming) return;
 	bIsAiming = bNewIsAiming;
 
-	// 이 로그가 출력되는지 확인하세요.
-	UE_LOG(LogTemp, Warning, TEXT("SetAiming Called! New State: %s"), bIsAiming ? TEXT("True") : TEXT("False"));
-	// 1. 공통 로직 실행 (전략에 따라 Target만 바꿔서 호출)
 	StartFOVTransition(bIsAiming ? AimFOV : DefaultFOV);
 
-	// 2. 자식 클래스의 Hook 함수 호출 (오버라이드된 연출 등)
 	if (bIsAiming) OnAimingStarted();
 	else OnAimingStopped();
 }
@@ -114,14 +114,10 @@ void AWeaponBase::UpdateFOVTransition()
 	if (PC && PC->PlayerCameraManager)
 	{
 		float CurrentFOV = PC->PlayerCameraManager->GetFOVAngle();
-
-		UE_LOG(LogTemp, Log, TEXT("Current FOV: %f, Target: %f"), CurrentFOV, TargetFOV);
 	
-		// 보간 (DeltaTime 대신 타이머 간격 0.01f 사용)
 		float NewFOV = FMath::FInterpTo(CurrentFOV, TargetFOV, 0.01f, FOVInterpSpeed);
 		PC->PlayerCameraManager->SetFOV(NewFOV);
 
-		// 목표 FOV에 거의 도달했다면 타이머 종료
 		if (FMath::IsNearlyEqual(NewFOV, TargetFOV, 0.1f))
 		{
 			PC->PlayerCameraManager->SetFOV(TargetFOV);

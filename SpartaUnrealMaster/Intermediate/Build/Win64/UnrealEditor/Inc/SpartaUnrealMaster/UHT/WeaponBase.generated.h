@@ -15,8 +15,8 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define SPARTAUNREALMASTER_WeaponBase_generated_h
 
 #define FID_SpartaUnrealMaster_Source_SpartaUnrealMaster_Public_WeaponBase_h_10_RPC_WRAPPERS_NO_PURE_DECLS \
-	DECLARE_FUNCTION(execSetAiming); \
 	DECLARE_FUNCTION(execHandleFireDelay); \
+	DECLARE_FUNCTION(execSetAiming); \
 	DECLARE_FUNCTION(execApplyRecoil); \
 	DECLARE_FUNCTION(execFire);
 

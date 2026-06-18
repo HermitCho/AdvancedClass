@@ -6,9 +6,6 @@
 #include "WeaponBase.h"
 #include "WeaponTemplateBase.generated.h"
 
-/**
- * 
- */
 UCLASS()
 class SPARTAUNREALMASTER_API AWeaponTemplateBase : public AWeaponBase
 {
@@ -17,11 +14,14 @@ public:
 
 	virtual void Fire() override;
 
-	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	UFUNCTION(BlueprintNativeEvent)
 	void Reload();
 
 protected:
+	UFUNCTION()
+	void HandleReloadFinished();
 
+protected:
 	//BlueprintNativeEvent = 블루프린트, C++에서 모두 수정.
 	UFUNCTION(BlueprintNativeEvent)
 	bool CheckAmmo();
@@ -39,4 +39,11 @@ protected:
 	UFUNCTION(BlueprintNativeEvent)
 	void UpdateAmmo();
 
+protected:
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Weapon | State")
+	bool bIsReloading = false;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
+	FTimerHandle TimerHandle_Reload;
 };
