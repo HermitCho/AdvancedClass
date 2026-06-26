@@ -19,6 +19,8 @@
 
 #include "Blueprint/UserWidget.h"
 
+#include "11week/GAs_AttributeSet.h"	
+
 DEFINE_LOG_CATEGORY(LogTemplateCharacter);
 
 //////////////////////////////////////////////////////////////////////////
@@ -60,6 +62,15 @@ ASpartaUnrealMasterCharacter::ASpartaUnrealMasterCharacter()
 
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named ThirdPersonCharacter (to avoid direct content references in C++)
+
+
+	AttributeSet = CreateDefaultSubobject<UGAs_AttributeSet>(TEXT("GASAttributeSetBase"));
+}
+
+void ASpartaUnrealMasterCharacter::ApplyDamage(float DamageAmount)
+{
+	float NewHp = AttributeSet->GetHp() - DamageAmount;
+	AttributeSet->SetHp(NewHp);
 }
 
 //////////////////////////////////////////////////////////////////////////

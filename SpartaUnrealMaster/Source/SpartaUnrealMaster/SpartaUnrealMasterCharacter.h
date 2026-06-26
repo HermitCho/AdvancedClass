@@ -13,6 +13,7 @@ class UInputMappingContext;
 class UInputAction;
 struct FInputActionValue;
 class AWeaponBase;
+class UGAs_AttributeSet;
 
 DECLARE_LOG_CATEGORY_EXTERN(LogTemplateCharacter, Log, All);
 
@@ -56,6 +57,8 @@ class ASpartaUnrealMasterCharacter : public ACharacter
 public:
 	ASpartaUnrealMasterCharacter();
 
+	UFUNCTION(BlueprintCallable)
+	void ApplyDamage(float DamageAmount);
 
 protected:
 
@@ -78,6 +81,9 @@ public:
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AbilitySystem")
+	TObjectPtr<class UGAs_AttributeSet> AttributeSet;
 
 protected:
 

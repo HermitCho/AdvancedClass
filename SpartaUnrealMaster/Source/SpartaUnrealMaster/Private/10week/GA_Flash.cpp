@@ -9,6 +9,14 @@ void UGA_Flash::ActivateAbility(const FGameplayAbilitySpecHandle Handle, const F
 {
 	Super::ActivateAbility(Handle, ActorInfo, ActivationInfo, TriggerEventData);
 
+	//CommitAbility를 코드로 적용하는 법.
+	if (!CommitAbility(Handle, ActorInfo, ActivationInfo))
+	{
+		//끝내기
+		EndAbility(Handle, ActorInfo, ActivationInfo, true, true);
+		return;
+	}
+
 	AActor* AvatarActor = GetAvatarActorFromActorInfo();
 	FVector TargetLocation = (AvatarActor->GetActorForwardVector() * 500) + AvatarActor->GetActorLocation();
 

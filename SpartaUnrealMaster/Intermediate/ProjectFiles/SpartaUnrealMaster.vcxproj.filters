@@ -117,6 +117,18 @@
     <ClCompile Include="..\..\Source\SpartaUnrealMaster\Private\10week\GA_Flash.cpp">
       <Filter>Source\SpartaUnrealMaster\Private\10week</Filter>
     </ClCompile>
+    <Filter Include="Source\SpartaUnrealMaster\Private\11week">
+      <UniqueIdentifier>{931272DC-AE5F-38E4-8D95-128463F8C2D8}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Private\11week\GAs_AttributeSet.cpp">
+      <Filter>Source\SpartaUnrealMaster\Private\11week</Filter>
+    </ClCompile>
+    <Filter Include="Source\SpartaUnrealMaster\Private\12week">
+      <UniqueIdentifier>{377F6BEB-34B2-31A0-8691-4DF49F62775F}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Private\12week\GAS_TargetActor.cpp">
+      <Filter>Source\SpartaUnrealMaster\Private\12week</Filter>
+    </ClCompile>
     <Filter Include="Source\SpartaUnrealMaster\Private\5week">
       <UniqueIdentifier>{B9D76863-93C3-3F6D-ACCD-D8442A5722C5}</UniqueIdentifier>
     </Filter>
@@ -230,6 +242,18 @@
     </ClCompile>
     <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\10week\GA_Flash.h">
       <Filter>Source\SpartaUnrealMaster\Public\10week</Filter>
+    </ClCompile>
+    <Filter Include="Source\SpartaUnrealMaster\Public\11week">
+      <UniqueIdentifier>{F93BBF75-F493-38D7-B449-EBF5AB7F6640}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\11week\GAs_AttributeSet.h">
+      <Filter>Source\SpartaUnrealMaster\Public\11week</Filter>
+    </ClCompile>
+    <Filter Include="Source\SpartaUnrealMaster\Public\12week">
+      <UniqueIdentifier>{07412235-2E41-386E-BB26-08017456EB61}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SpartaUnrealMaster\Public\12week\GAS_TargetActor.h">
+      <Filter>Source\SpartaUnrealMaster\Public\12week</Filter>
     </ClCompile>
     <Filter Include="Source\SpartaUnrealMaster\Public\5week">
       <UniqueIdentifier>{F74ABA89-29A1-3D06-A99A-61D14C151DB4}</UniqueIdentifier>
